@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/AboutUs"
+            android:title="Về Chúng Tôi" />
+        <item
+            android:id="@+id/Menu"
+            android:title="Thực Đơn" />
+        <item
+            android:id="@+id/Booking"
+            android:title="Đặt Bàn" />
+        <item
+            android:id="@+id/Contact"
+            android:title="Liên Hệ" />
+        <item
+            android:id="@+id/Hiring"
+            android:title="Tuyển Dụng" />
+
+    </group>
+</menu>

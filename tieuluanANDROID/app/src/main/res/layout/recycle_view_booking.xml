@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_disscount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="bàn 2 người"
+        android:textColor="#FF5C47"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/background"
+        app:layout_constraintTop_toTopOf="@id/background" />
+
+    <TextView
+        android:id="@+id/tv_tinhtrang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="tình trạng"
+        android:textColor="#4CAF50"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/background"
+        app:layout_constraintTop_toBottomOf="@id/tv_ban" />
+
+    <ImageView
+        android:id="@+id/imgdatngay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/booking"
+        android:text="Đặt Ngay"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@id/background" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DrawerMenu.AboutUsFragment"
+    android:id="@id/AboutUs"
+    android:background="@drawable/bg_wave">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@drawable/bg_aboutus"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VỀ CHÚNG TÔI"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#F44336"
+            android:textSize="30dp"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Nhà hàng lẩu TOKYO SHABU được ra đời
+	bởi tình yêu đối với nền ẩm thực Nhật Bản . Với sứ mệnh mang đến những món ăn ngon và bổ dưỡng đảm bảo sức khỏe từ đất nước mặt
+trời mọc . TOKYO SHABU là cầu nối giữa nền ẩm thực Việt Nhật với
+	những nguyên liệu được nhập khẩu mỗi ngày để có thể chế biến món
+ăn đáp ứng nhu cầu của khách hàng ."
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:text="Với TOKYO SHABU 'tính CHẤT LƯỢNG ,
+tính ĐỘC ĐÁO , tính ĐỒNG NHẤT' luôn được đưa lên hàng đầu , và là
+tôn chỉ của tất cả nhân viên trong nhà hàng ."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:text="Phương châm CHẤT LƯỢNG TẠO THƯƠNG
+HIỆU , nhà hàng TOKYO SHABU cam kết sẽ mang đến những món ăn bổ
+dưỡng đến khách hàng"/>
+    </LinearLayout>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/DrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:id="@+id/ToolBar"
+                    android:background="@drawable/bg_search"
+                    app:menu="@menu/toolbar_menu"
+                    tools:ignore="DuplicateIds">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/btnOpenDrawer"
+                        android:drawableLeft="@drawable/menu_bar"
+                        android:layout_gravity="start"
+                        />
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </LinearLayout>
+        </ScrollView>
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/NavigationView"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/drawer_header"
+            app:menu="@menu/drawer_menu">
+
+
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</FrameLayout>

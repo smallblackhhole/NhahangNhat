@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.FragmentProfile"
+    android:background="@drawable/background"
+    android:id="@+id/frame_layout_login">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/lg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+
+            android:id="@+id/dn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:hint="Số Điện Thoại"
+            android:textSize="20dp"
+            android:background="@drawable/bogoc"
+            android:drawableLeft="@drawable/phone"
+            android:padding="20dp"
+            android:drawablePadding="10dp"
+            android:textStyle="bold"
+            >
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/mk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="360dp"
+            android:background="@drawable/bogoc"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="10dp"
+            android:hint="Mật Khẩu"
+            android:padding="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"></EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/bogoc"
+        android:text="SIGN IN"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="145dp"
+        android:text="You Don't Have An Account ?"
+        android:textSize="19dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/su"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/login"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/bogoc"
+        android:text="SIGN UP"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
+</FrameLayout>

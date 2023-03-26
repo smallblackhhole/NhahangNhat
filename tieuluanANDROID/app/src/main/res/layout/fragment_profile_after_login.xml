@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.FragmentProfileAfterLogin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quản lý tài khoản"
+                android:textColor="#EC8303"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textAlignment="center"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile"/>
+            <include
+                layout="@layout/taikhoan_recycleview"/>
+            <TextView
+                android:id="@+id/chinhsuatk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chỉnh sửa thông tin"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/xoatk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yêu cầu xóa tài khoản"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_gravity="center|bottom"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Đăng Xuất"
+                android:textStyle="bold"
+                android:id="@+id/logout"
+                />
+            </LinearLayout>
+
+
+
+</FrameLayout>

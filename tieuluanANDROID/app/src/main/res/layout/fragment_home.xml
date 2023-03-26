@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/fragment_home"
+    android:background="#F4EDED"
+    >
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/DrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/ToolBar"
+                    android:translationZ="999dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@drawable/bg_search"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:menu="@menu/toolbar_menu">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnOpenDrawer"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/menu_bar" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/searchne"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Tìm kiếm sản phẩm"
+                        android:background="#00FFFFFF"
+                        android:drawableRight="@drawable/search"/>
+                </androidx.appcompat.widget.Toolbar>
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/slider_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/ic_launcher_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ToolBar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:id="@+id/rcv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                   >
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SẢN PHẨM NỔI BẬT"
+                        android:textSize="25dp"
+                        android:textAlignment="center"
+                        android:background="@color/teal_200"
+                        android:textColor="#E91E63"/>
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_sanpham"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/NavigationView"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/drawer_header"
+            app:menu="@menu/drawer_menu"
+            >
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

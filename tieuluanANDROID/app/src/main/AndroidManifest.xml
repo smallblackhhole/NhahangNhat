@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NhahangNhat"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".FooddetailAfterLogin"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCTNM87rQ21dwPFB4IbdT--mEJzfHMQDio" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchActi.SearchActi"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Phanloaimonan"
+            android:exported="false" />
+        <activity
+            android:name=".Notification.Notification"
+            android:exported="false" />
+        <activity
+            android:name=".cart.FragmentCart"
+            android:exported="false" />
+        <activity
+            android:name=".FoodDetail"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".booking.datban"
+            android:exported="false" />
+        <activity
+            android:name=".contact.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterPage"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteAccountPage"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateProfilePage"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_navigation"
+    app:startDestination="@+id/AboutUs"
+    xmlns:tools="http://schemas.android.com/tools">
+    <fragment
+    android:id="@+id/AboutUs"
+    android:name="com.example.nhahangnhat.DrawerMenu.AboutUsFragment"
+    android:label="AboutUs"
+    tools:layout="@layout/fragment_about_us"
+    />
+    <fragment
+        android:id="@+id/Menu"
+        android:name="com.example.nhahangnhat.DrawerMenu.MenuFragment"
+        android:label="AboutUs"
+        tools:layout="@layout/fragment_about_us"
+        />
+    <fragment
+        android:id="@+id/Booking"
+        android:name="com.example.nhahangnhat.DrawerMenu.BookingFragment"
+        android:label="AboutUs"
+        tools:layout="@layout/fragment_about_us"
+        />
+    <fragment
+        android:id="@+id/Contact"
+        android:name="com.example.nhahangnhat.DrawerMenu.ContactFragment"
+        android:label="AboutUs"
+        tools:layout="@layout/fragment_about_us"
+        />
+    <fragment
+        android:id="@+id/Hiring"
+        android:name="com.example.nhahangnhat.DrawerMenu.HiringFragment"
+        android:label="AboutUs"
+        tools:layout="@layout/fragment_about_us"
+        />
+
+</navigation>

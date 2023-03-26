@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@drawable/backgroundcart"
+        ></ImageView>
+    <ImageView
+        android:id="@+id/imageCart"
+        android:layout_width="95dp"
+        android:layout_margin="10dp"
+        android:layout_height="97dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/nameCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/imageCart"
+        android:text="ádasd"
+        android:textColor="#F81A1A"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/priceCart"
+        android:layout_width="100dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameCart"
+        android:layout_marginStart="15dp"
+        android:text="adasda"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/imageCart" />
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/priceCart"
+        >
+        <ImageView
+            android:id="@+id/btmin"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/minusbox" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:id="@+id/soluongdh"
+            android:textSize="25dp"
+            android:layout_marginTop="6dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/btmax"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plusbox"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="40dp"
+            android:id="@+id/bin"
+            android:layout_height="40dp"
+            android:background="@drawable/bin" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

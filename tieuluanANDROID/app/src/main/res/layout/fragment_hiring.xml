@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DrawerMenu.HiringFragment"
+    android:background="#AFA591">
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/DrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:id="@+id/ToolBar"
+                    android:background="@drawable/bg_search"
+                    app:menu="@menu/toolbar_menu"
+                    tools:ignore="DuplicateIds">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/btnOpenDrawer"
+                        android:drawableLeft="@drawable/menu_bar"
+                        android:layout_gravity="start"
+                        tools:ignore="DuplicateIds" />
+
+                </androidx.appcompat.widget.Toolbar>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_booking">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Đăng Ký Tuyển Dụng"
+                        android:textColor="@color/black"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:gravity="center">
+                    </TextView>
+                    <EditText
+                        android:id="@+id/edtten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Họ và Tên"
+                        app:counterEnabled="true"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="40dp">
+
+                    </EditText>
+                    <EditText
+                        android:id="@+id/edtemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        app:counterEnabled="true"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp">
+
+                    </EditText>
+                    <EditText
+                        android:id="@+id/edtsdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Số Điện Thoại"
+                        app:counterEnabled="true"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp">
+                    </EditText>
+                    <EditText
+                        android:id="@+id/edtdiachi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Địa chỉ"
+                        app:counterEnabled="true"
+                        android:padding="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp">
+                    </EditText>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chọn vị trí ứng tuyển"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:layout_marginTop="5dp">
+                    </TextView>
+                    <Spinner
+                        android:id="@+id/spinnerchonvitri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp">
+                    </Spinner>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btndktuyendung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đăng Ký"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="100dp"
+                        android:background="#C5A547">
+                    </androidx.appcompat.widget.AppCompatButton>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/NavigationView"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/drawer_header"
+            app:menu="@menu/drawer_menu">
+
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</FrameLayout>

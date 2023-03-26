@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FooddetailAfterLogin"
+    android:background="#EAE8E5"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#EAE8E5">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/back"
+                android:background="@drawable/back"/>
+        </Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_detail">
+            <ImageView
+                android:id="@+id/hinhchitiet1"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_detail"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tenmonanchitiet1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="TextView"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/giamonanchitiet1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" TextView "
+                    android:textAlignment="center"
+                    android:textColor="#ED0606"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="đ"
+                    android:textAlignment="center"
+                    android:textColor="#ED0606"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/giamonanchitiet"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:text="MÔ TẢ MÓN ĂN :"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/chitietmonan1"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="match_parent"
+                    android:text="TextView"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addcartbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_bottomdetailbtn"
+            android:gravity="center"
+            android:text="ADD TO CART"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>
